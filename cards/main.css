@@ -1,0 +1,31 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+body{
+    min-width:350px;
+    min-height:260px;
+    padding:10px 0px 20px;
+}
+li:not(:first-of-type):not(:nth-of-type(4)){
+    margin-left:-15px;
+}
+li:not(:nth-of-type(4))       {
+    width:36px;
+    height:54px;
+}
+li:nth-of-type(4){
+    margin-right:30px;
+    margin-left:15px;
+}
+li:nth-of-type(4)~.heart  {
+    background:#ffcccc;
+}
+.diamond:not(.nine):not(.king):not(.seven):not(.jack){
+    background:#ccffcc;
+}
+.seven:not(.club){
+    background:#ccffff;}
+.cards:last-of-type li:nth-of-type(3n){
+    background:#ffffcc;
+}
